@@ -3,6 +3,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+var path = require('path');
 
 const db = require("./models");
 // require mongodb_uri
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handlebars
 app.engine(

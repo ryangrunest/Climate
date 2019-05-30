@@ -1,3 +1,16 @@
-.list-group-item {
-  line-height: 2.5;
+html {
+  background: url(/imgs/sunny.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  color: white;
+}
+.centered {
+  position: fixed; /* or absolute */
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
